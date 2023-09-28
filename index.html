@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PracticeStore</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-continer">
+        <div class="header">
+             <h1> CATALOG </h1>
+        </div>
+        <div>
+            <button class="new-product" id="add__new">
+                add product
+            </button>
+            <img class="basket" src="istockphoto-1206806317-612x612.jpg">
+        </div>
+        <div class="cards">
+            <div class="cards__product">
+                <img src="/Tomato.png" id="img1">
+                <p id="namePr">
+                    name
+                </p>
+                <p id="pricePr">
+                    price
+                </p>
+                <button id="add__basketPr">
+                    add to basket
+                </button>
+            </div>
+            <div class="cards__product">
+                <img src="/Tomato.png" id="img1Pr">
+                <p>
+                    name
+                </p>
+                <p id="price">
+                    price
+                </p>
+                <button id="add__basket">
+                    add to basket
+                </button>
+            </div>
+            <div class="cards__product">
+                <img src="/Tomato.png" id="img1">
+                <p>
+                    name
+                </p>
+                <p id="price">
+                    price
+                </p>
+                <button id="add__basket">
+                    add to basket
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="modal__window disabled" id="modal-window">
+        <div class="cards__product__new">
+            <input type="file">
+            <button class="" id="closed"> X </button>
+            </br>
+            <input type="text" id="name-product">
+            </br>
+            <input type="number" id="price-product">
+            </br>
+            <button id="add-new-product">
+                create
+            </button>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
