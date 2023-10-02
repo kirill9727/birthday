@@ -11,6 +11,13 @@ function closedModal () {
 }
 closedBtn.onclick = closedModal
 
+const inBasket = document.querySelector('.inBasket')
+const basketProduct = document.querySelector('.basketProduct')
+function seeBasketHere () {
+    basketProduct.classList.toggle('noneBasket')
+}
+inBasket.onclick = seeBasketHere
+
 let nameProduct = document.querySelector('#name-product')
 let priceProduct = document.querySelector('#price-product')
 const addNewCardProduct = document.querySelector('#add-new-product')

@@ -17,9 +17,30 @@
             <button class="new-product" id="add__new">
                 add product
             </button>
-            <a href="/basket.html" id="basket">
-                <img class="basket" src="istockphoto-1206806317-612x612.jpg">
-            </a>
+            <div class="searches">
+                <input type="text">
+            </div>
+            <div class="inBasket" id="inBasket">
+                <a id="basket">
+                    <img class="basket" src="istockphoto-1206806317-612x612.jpg">
+                </a>
+            </div>
+        </div>
+        <div class="basketProduct noneBasket">
+            <div class="miniProduct" data-id="01">
+                <img class="basketimgProduct" src="/Tomato.png" id="img1">
+                <div class="comments">
+                    <p id="namePr">
+                        Tomato
+                    </p>
+                    <p id="pricePr">
+                        100 p.
+                    </p>
+                </div>
+                <button class="basketAdd" id="add__basketPr">
+                    колличество
+                </button>
+            </div>
         </div>
         <div class="cards">
             <div class="cards__product" data-id="01">
@@ -32,9 +53,17 @@
                         100 p.
                     </p>
                 </div>
-                <button class="basketAdd" id="add__basketPr">
-                    add to basket
-                </button>
+                <div class="btnCards">
+                    <button class="basketPlus">
+                        +1
+                    </button>
+                    <button class="basketAdd" id="add__basketPr">
+                        add to basket
+                    </button>
+                    <button class="basketMinus">
+                        -1
+                    </button>
+                </div>
             </div>
         </div>
     </div>
