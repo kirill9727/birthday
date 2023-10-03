@@ -20,27 +20,6 @@
             <div class="searches">
                 <input type="text">
             </div>
-            <div class="inBasket" id="inBasket">
-                <a id="basket">
-                    <img class="basket" src="istockphoto-1206806317-612x612.jpg">
-                </a>
-            </div>
-        </div>
-        <div class="basketProduct noneBasket">
-            <div class="miniProduct" data-id="01">
-                <img class="basketimgProduct" src="/Tomato.png" id="img1">
-                <div class="comments">
-                    <p id="namePr">
-                        Tomato
-                    </p>
-                    <p id="pricePr">
-                        100 p.
-                    </p>
-                </div>
-                <button class="basketAdd" id="add__basketPr">
-                    колличество
-                </button>
-            </div>
         </div>
         <div class="cards">
             <div class="cards__product" data-id="01">
@@ -54,14 +33,8 @@
                     </p>
                 </div>
                 <div class="btnCards">
-                    <button class="basketPlus">
-                        +1
-                    </button>
-                    <button class="basketAdd" id="add__basketPr">
+                    <button class="basketAdd" id="add__basket">
                         add to basket
-                    </button>
-                    <button class="basketMinus">
-                        -1
                     </button>
                 </div>
             </div>
@@ -81,7 +54,27 @@
             </button>
         </div>
     </div>
-    <script src="main.js"></script>
-    <script src="basket.js"></script>
+    <div class="basketMain" id="basketMain">
+        <div class="inBasket" id="inBasket">
+            <a class="basketH" id="basket">
+                <img class="basket" src="istockphoto-1206806317-612x612.jpg">
+            </a>
+        </div>
+        <div class="basketProduct ">
+<!--            <div class="miniProduct" data-id="01">-->
+<!--                <img class="basketimgProduct" src="/Tomato.png" id="img1">-->
+<!--                <div class="comments">-->
+<!--                    <p id="namePr">-->
+<!--                        Tomato-->
+<!--                    </p>-->
+<!--                    <p id="pricePr">-->
+<!--                        100 p.-->
+<!--                    </p>-->
+<!--                </div>-->
+<!--            </div>-->
+        </div>
+    </div>
+    <script src="/main.js"></script>
+    <script src="/basket.js"></script>
 </body>
 </html>

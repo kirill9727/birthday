@@ -1,6 +1,12 @@
 const addNew = document.querySelector('#add__new')
 const modal__window = document.querySelector('.modal__window')
 const closedBtn = document.querySelector('#closed')
+let nameProduct = document.querySelector('#name-product')
+let priceProduct = document.querySelector('#price-product')
+const addNewCardProduct = document.querySelector('#add-new-product')
+const containerCards = document.querySelector('.cards')
+const basketProduct = document.querySelector('.basketProduct')
+
 
 function addNewProduct () {
     modal__window.classList.toggle('disabled')
@@ -11,35 +17,25 @@ function closedModal () {
 }
 closedBtn.onclick = closedModal
 
-const inBasket = document.querySelector('.inBasket')
-const basketProduct = document.querySelector('.basketProduct')
-function seeBasketHere () {
-    basketProduct.classList.toggle('noneBasket')
-}
-inBasket.onclick = seeBasketHere
-
-let nameProduct = document.querySelector('#name-product')
-let priceProduct = document.querySelector('#price-product')
-const addNewCardProduct = document.querySelector('#add-new-product')
-const containerCards = document.querySelector('.cards')
-
 function productNew() {
     let nameCreate = nameProduct.value
     let priceCreate = priceProduct.value
     let createElnew = document.createElement('div')
     createElnew.className = "cards__product"
     createElnew.innerHTML = `<img src="/Tomato.png" class="imgProduct" id="img1">
-                <div class="comments">
+                <div class="comments" data-id="01">
                     <p id="namePr">
                         ${nameCreate}
                     </p>
                     <p id="pricePr">
-                        ${priceCreate} p.
+                        ${priceCreate}
                     </p>
                 </div>
-                <button class="basketAdd" id="add__basketPr">
-                    add to basket
-                </button>`
+                <div class="btnCards">
+                    <button class="basketAdd" id="add__basket">
+                        add to basket
+                    </button>
+                </div>`
     return containerCards.append(createElnew)
 }
 addNewCardProduct.onclick = productNew

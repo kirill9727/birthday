@@ -1,5 +1,5 @@
-const basket = document.querySelector('#basket')
-const inBasket = document.querySelector('#inBasket')
+const basket = document.querySelector('#add__basket')
+const inBasket = document.querySelector('.basketProduct')
 
 
 basket.addEventListener('click', function createBasketForm (event) {
@@ -7,21 +7,34 @@ basket.addEventListener('click', function createBasketForm (event) {
     const productInf = {
         id: mainCard.dataset.id,
         imgSrc: mainCard.querySelector('.imgProduct').getAttribute('src'),
-        nameProd: mainCard.querySelector('.namePr').innerText,
-        priceProd: mainCard.querySelector('#pricePr').innerText
+        nameProd: mainCard.querySelector('#namePr').innerText,
+        priceProd: mainCard.querySelector('#pricePr').innerText,
     }
+
     let createElnew = document.createElement('div')
-    createElnew.className = "cards__product"
-    createElnew.innerHTML = `<img src="/Tomato.png" class="imgProduct" id="img1">
+    createElnew.className = "miniProduct"
+    createElnew.innerHTML = `<img src="/Tomato.png" class="basketimgProduct" id="img1">
                 <p id="namePr">
                     ${productInf.nameProd}
                 </p>
                 <p id="pricePrM">
                     ${productInf.priceProd}
                 </p>
-                <button id="add__basketPr">
-                    add to basket
-                </button>`
+                <div class="btnInBasket">
+                    <button id="btnSum">
+                        <p id="plus">
+                            + 1
+                        </p>
+                    </button>
+                    <p id="valuePrice">
+                    Итог:
+                    </p>\
+                    <button id="btnMinus">
+                        <p id="minus">
+                            - 1
+                        </p>
+                    </button>
+                </div>`
     return inBasket.append(createElnew)
 })
 
