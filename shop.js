@@ -151,6 +151,5 @@ totalSumSale()
 function Cart_DeleteProduct () {
     return Cart = {}
 }
-Cart_DeleteProduct()
-
+Cart_DeleteProduct()//
 
